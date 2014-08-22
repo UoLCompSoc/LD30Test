@@ -48,12 +48,12 @@ public class RenderingSystem extends IteratingSystem {
 
 		switch (r.shape) {
 		case RECTANGLE: {
-			renderer.rect(pos.x, pos.y, 8.0f, 128.0f);
+			renderer.rect(pos.x, pos.y, r.dimension.x, r.dimension.y);
 			break;
 		}
 
 		case CIRCLE: {
-			renderer.circle(pos.x, pos.y, 8.0f);
+			renderer.circle(pos.x, pos.y, r.dimension.x);
 			break;
 		}
 		}

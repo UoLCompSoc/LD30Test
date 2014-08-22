@@ -40,10 +40,6 @@ public class MovementSystem extends IteratingSystem {
 		p.x += v.x;
 		p.y += v.y;
 
-		if (p.x < bounds.x || p.x > bounds.width) {
-			v.x = -v.x;
-		}
-
 		if (p.y < bounds.y || p.y > bounds.height) {
 			v.y = -v.y;
 		}
